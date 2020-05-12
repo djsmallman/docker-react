@@ -1,10 +1,10 @@
 language: generic
 sudo: required
 services:
-  - docker
+- docker
 
-  before_install:
-    - docker build -t djsmallman/docker-react -f dockerfile.dev .
+before_install:
+- docker build -t djsmallman/docker-react -f dockerfile.dev .
 
-    script:
-  - docker run -e CI=true djsmallman/docker-react npm run test -- --coverage
+script:
+- docker run -e CI=true djsmallman/docker-react npm run test -- --coverage
