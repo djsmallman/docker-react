@@ -18,7 +18,5 @@ bucket_name: "elasticbeanstalk-eu-west-2-997493607229"
 bucket_path: "docker-react"
 on:
 branch: master
-access_key_id:
-secure: $accesskey
-secret_access_key: 
-secure: $accesssecret
+access_key_id: $accesskey
+secret_access_key: $accesssecret
